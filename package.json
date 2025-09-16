@@ -1,0 +1,17 @@
+{
+  "name": "monorepo-project",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --cache-dir .turbo --parallel",
+    "dev": "echo \"Run dev inside an app, e.g. cd apps/system-a && yarn dev\"",
+    "lint": "echo \"Add ESLint if needed\""
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "turbo": "^2.0.0"
+  }
+}
